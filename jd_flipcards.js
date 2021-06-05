@@ -28,8 +28,8 @@ cron "1 0-23/1 * 6 *" script-path=https://raw.githubusercontent.com/Wenmoux/scri
 const $ = new Env('翻翻乐');
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
-const openum =$.isNode()?( process.env.Openum? process.env.Openum:5):5//翻牌次数 可以自己改
-const randomCount = $.isNode() ? 20 : 5;
+const openum =$.isNode()?( process.env.Openum? process.env.Openum:3):3//翻牌次数 可以自己改
+const randomCount = $.isNode() ? 4 : 3;
 const notify = $.isNode() ? require('./sendNotify') : '';
 let merge = {}
 let codeList = []
